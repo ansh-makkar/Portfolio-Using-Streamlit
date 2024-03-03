@@ -39,9 +39,9 @@ if selected=="Contact Me":
         email_address=st.text_input("Email Address :")
         
     st.text_area("You Can Leave Your Messeage Here .....")
-    st.write("<div style='text-align: center;'>", unsafe_allow_html=True)
-    col11, col12, col13 , col14, col15 = st.columns(5)
 
+    ## Putting Submit button in center.
+    col11, col12, col13 , col14, col15 = st.columns(5)
     with col11:
         pass
     with col12:
