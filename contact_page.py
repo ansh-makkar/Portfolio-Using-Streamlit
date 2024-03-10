@@ -1,6 +1,7 @@
 import pandas as pd
 import streamlit as st
 from streamlit_option_menu import option_menu
+from telegram_bot import *
 
 def contact_page():
     st.markdown("<h1 style='text-align: center;'>CONTACT ME</h1>", unsafe_allow_html=True)
@@ -14,7 +15,7 @@ def contact_page():
     with col2:
         last_name=st.text_input("Last Name :")
         email_address=st.text_input("Email Address :")        
-    st.text_area("You Can Leave Your Messeage Here .....")
+    message=st.text_area("You Can Leave Your Messeage Here .....")
 
     ## Putting Submit button in center.
     col11, col12, col13 , col14, col15 = st.columns(5)
@@ -27,7 +28,7 @@ def contact_page():
     with col15:
         pass
     with col13 :
-        form_submit_button = st.button('Button')
+        form_submit_button = st.button('Submit')
     errors=False
     
     
@@ -41,6 +42,8 @@ def contact_page():
             st.error("Please Enter a Valid Email Id")
             errors=True    
     if form_submit_button and not errors:        
-        st.success(f"Thankyou! {first_name} , I will Contact as Soon as Possible.")
-
         
+        email_notification(email_address,f"Thankyou For Conatacting Me {first_name}",f"Heyy! {first_name} {last_name}, Thankyou For Reaching Out to Me ! I will Get Back To you As Soon As I Can.")
+        telegram_bot(f"NAME :- {first_name} {last_name}")
+        telegram_bot(f"{message}")
+        st.success(f"Thankyou! {first_name} ,Your Response Has Been Recorded, Please Check Your Mail Id.")
