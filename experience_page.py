@@ -32,5 +32,19 @@ def experience_function():
     st.write("""    
         - Automated Websites/Windows Applications/Android Applications by Using Libraries like ADB,Selenium etc. 
         - Developed in House Project To Automate Download of Android Applications From Play Store Multiple Times.
-        - Maintained Data & Analyzed it to show in form of Dashboards.
+        - Maintained Consistency Data & Analyzed it to show in form of Dashboards.
+    """)
+
+    st.write("#")
+    st.write("---")
+    col1,col2,col3=st.columns(3)
+    with col1:
+        st.subheader("Data Science Intern- The Trinity Company")
+    with col3:
+        st.subheader("Sept,2022-Oct,2022")
+    st.write("#")
+    st.write("""    
+        - Used ML Models Like Random Forest, Decesion Tree, Logistic Regression etc. To Develop ML Projects 
+        - Developed Various in house small case projects like Churn prediction, Stock price prediction, Weather prediction etc.
+        - Maintained Consistency of  Data & Analyzed it to show in form of Dashboards.
     """)
