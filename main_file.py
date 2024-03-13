@@ -3,6 +3,7 @@ import streamlit as st
 from streamlit_option_menu import option_menu
 from contact_page import *
 from home_page import *
+from experience_page import *
 
 st.set_page_config(
     page_title="Ansh Makkar",  # Set the title of the browser tab
@@ -23,8 +24,8 @@ selected=option_menu(
     default_index=0,
     orientation="horizontal"
 )
-if selected:
-    st.write(f"{selected}")
+if selected=="Experience":
+    experience_function()
 
 if selected=="Contact Me":
     contact_page()

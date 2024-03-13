@@ -17,8 +17,20 @@ def home_page_function():
         st.write("+91-82953514150")
         st.write("",EMAIL)
     st.write("#")
-    st.write("#")
     cols=st.columns(len(Socail_Media_Links))
     for index,(platform,links) in enumerate(Socail_Media_Links.items()):
         cols[index].write(f"[{platform}]({links})")
+
+    st.write("#")
+    st.write("---")
+    st.subheader("**Hard Skills**")
+    st.write("""
+    - 👩‍💻 Programming: Python (Scikit-learn, Pandas), Data Analytics,Automation(ABD, Selenium)
+    - 📊 Data Visulization: Streamlit, Flask, dash, PowerBi, MS Excel, Plotly
+    - 📚 Modeling: Logistic regression, linear regression, decition trees, Random Forest
+    - 🗄️ Databases:  MySQL
+    
+    """)
+
+    st.write("#")
     
