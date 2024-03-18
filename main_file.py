@@ -4,6 +4,7 @@ from streamlit_option_menu import option_menu
 from contact_page import *
 from home_page import *
 from experience_page import *
+from projects_page import *
 
 st.set_page_config(
     page_title="Ansh Makkar",  # Set the title of the browser tab
@@ -32,3 +33,6 @@ if selected=="Contact Me":
 
 if selected=="Home":
     home_page_function()
+
+if selected=="Projects":
+    project_function()
