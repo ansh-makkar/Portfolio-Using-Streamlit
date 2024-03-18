@@ -14,7 +14,7 @@ def experience_function():
         st.subheader("May,2023-Present")
     st.write("#")
     st.write("""    
-        - Clean Backadjusted Datas and Extract Only Useful Insights
+        - Clean Backadjusted Data and Extract Only Useful Insights
         - Backtest Indices(Banknifty, Nifty, Finnifty etc.) from Last 5-7 years.
         - Create Strategy For Algo-Tradign Using Python.
         - Create Dashboard using Libraries like Streamlit, Dash, flask etc. To Display Current P&L.        
