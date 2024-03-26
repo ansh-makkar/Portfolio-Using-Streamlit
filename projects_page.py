@@ -41,10 +41,9 @@ def project_function():
     
     st.write("#")
     st.write("""    
-        - 
-        - 
-        - 
-        - 
+        - Go Harvest Is an Web-Application as well as an Android Application Used to Help Farmers.
+        - It Help Farmers To Chose from a Particular One Crop From wide variety of Crops To give Maximum Yield.
+        - It takes Various Parameters Like Soil Ph, Tempratures, Area ,etc.
     """)
 
 
