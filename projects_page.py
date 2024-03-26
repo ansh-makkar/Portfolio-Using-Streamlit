@@ -20,10 +20,10 @@ def project_function():
     
     st.write("#")
     st.write("""    
-        - 
-        - 
-        - 
-        - 
+        - NLP ToolKit is an Web-Application Used to Get Sentimental Analysis or Summarization.
+        - NLP help Us to Extract The Main Agenda Behind a Review/ a block Of Text / paragraph etc.
+        - NLP Uses BERT( Bi-Directional Encoding Transformer) Model From 
+        - The Main Tech Stack Behind This WEB-APP are Deep Learning, Machine Learning, React JS, HTML, CSS etc.
         
     """)
 
